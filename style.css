@@ -1,0 +1,14 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#heading{
+    text-align: left;
+    margin-left: 25px;
+}
+
+ #div3, #div2 , #div1{
+    text-align: left;
+    padding: 10px;
+    margin-left: 20px;
+}

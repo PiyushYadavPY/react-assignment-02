@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="root">
+
+    </div>
+
+    <script type="text/babel">
+        const rootEle = document.querySelector('#root');
+        const root = ReactDOM.createRoot(rootEle);
+
+
+        function Header() {
+            return (
+
+                <div id="heading">
+                    <h1>Topics Covered</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, quibusdam.</p>
+                </div>
+            )
+        }
+
+        function Div1() {
+
+            return (
+                <div id="div1">
+                    <a href="#">Lorem ipsum dolor sit.</a>
+                    <p>  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Alias est quod, recusandae eius saepe quasi numquam suscipit quibusdam sit blanditiis.
+                    </p>
+                </div>
+            )
+        }
+
+        function Div2() {
+
+            return (
+                <div id="div2">
+                    <a href="#">Lorem ipsum dolor sit.</a>
+                    <p>  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Alias est quod, recusandae eius saepe quasi numquam suscipit quibusdam sit blanditiis.
+                    </p>
+                </div>
+            )
+        }
+        function Div3() {
+
+            return (
+                <div id="div3">
+                    <a href="#">Lorem ipsum dolor sit.</a>
+                    <p>  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Alias est quod, recusandae eius saepe quasi numquam suscipit quibusdam sit blanditiis.
+                    </p>
+                </div>
+            )
+        }
+
+        function Main() {
+            return (
+                <div id="main">
+                    <Header />
+                    <Div1 />
+                    <Div2 />
+                    <Div3 />
+                </div>
+            )
+        }
+
+        root.render(<Main />)
+
+    </script>
+
+</body>
+
+</html>
